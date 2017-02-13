@@ -16,7 +16,7 @@ please goto to the original repository [BlackrockDigital/startbootstrap-sb-admin
 
 ## Quickstart
 
- 1. Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
+ 1. Clone the repo: `git clone https://github.com/siglocpp/sb-admin2-angular2.git`
  2. `npm install` should install all dependencies
  3. `gulp serve` compiles an moves everything to the dist folder, and opens your browser with live-editing version of SB-Admin
  
