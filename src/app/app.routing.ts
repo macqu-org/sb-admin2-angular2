@@ -14,9 +14,6 @@ import { Login } from "./pages/login";
 import { PanelsWells } from "./pages/panels-wells";
 
 /**
- * Copyright 2017 Cinovo AG<br>
- * <br>
- *
  * @author psigloch
  */
 export const APP_ROUTES: Routes = [

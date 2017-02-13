@@ -1,7 +1,4 @@
 /**
- * Copyright 2017 Cinovo AG<br>
- * <br>
- *
  * @author psigloch
  */
 import { NgModule } from "@angular/core";

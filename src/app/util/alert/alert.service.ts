@@ -1,9 +1,6 @@
 import { Injectable } from "@angular/core";
 
 /**
- * Copyright 2017 Cinovo AG<br>
- * <br>
- *
  * @author psigloch
  */
 @Injectable()
