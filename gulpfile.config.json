@@ -1,0 +1,163 @@
+{
+  "target": "dist",
+  "tsconfig": "./tsconfig.json",
+  "proxy": {
+    "url": "http://localhost:3000/api",
+    "route": "api"
+  },
+  "vendor": {
+    "src": [
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/core-js/client/shim.min.js",
+      "node_modules/zone.js/dist/zone.js",
+      "node_modules/reflect-metadata/Reflect.js",
+      "node_modules/systemjs/dist/system.src.js",
+      "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "node_modules/datatables.net/js/jquery.dataTables.js",
+      "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
+      "node_modules/datatables.net-responsive/js/dataTables.responsive.js",
+      "node_modules/datatables.net-responsive-bs/js/responsive.bootstrap.js",
+      "node_modules/metismenu/dist/metisMenu.min.js",
+
+      "node_modules/Flot/excanvas.js",
+      "node_modules/Flot/jquery.flot.js",
+      "node_modules/Flot/jquery.flot.pie.js",
+      "node_modules/Flot/jquery.flot.resize.js",
+      "node_modules/Flot/jquery.flot.time.js",
+      "node_modules/jquery.flot.tooltip/js/jquery.flot.tooltip.js",
+
+      "node_modules/eve-raphael/eve.js",
+      "node_modules/raphael/raphael.js",
+      "node_modules/morris.js/morris.js"
+    ],
+    "inactivesrc": [
+    ],
+    "target": "dist"
+  },
+  "libs": [
+    {
+      "src": "node_modules/**/rxjs/**/*.js",
+      "target": "dist/lib"
+    },
+    {
+      "src": "node_modules/**/@angular/**/bundles/*.umd.*js",
+      "target": "dist/lib"
+    },
+    {
+      "src": "node_modules/**/angular2-component-outlet/**/*.js",
+      "target": "dist/lib"
+    },
+    {
+      "src": "node_modules/**/ng2-webstorage/**/*.js",
+      "target": "dist/lib"
+    }
+  ],
+  "assets": [
+    {
+      "src": [
+        "src/index.html"
+      ],
+      "target": "dist",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "src/**/*.html",
+        "assets/**/*.html",
+        "!src/index.html"
+      ],
+      "target": "dist/html",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "src/**/*.css",
+        "assets/**/*.css",
+        "!src/index.css"
+      ],
+      "target": "dist/css",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "assets/**/*",
+        "!assets/**/*.html",
+        "!assets/**/*.css"
+      ],
+      "target": "dist",
+      "flatten": [
+        1
+      ]
+    },
+    {
+      "src": [
+        "node_modules/bootstrap-sass/assets/fonts/bootstrap/*.*"
+      ],
+      "target": "dist/fonts/bootstrap",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "node_modules/font-awesome/fonts/*.*"
+      ],
+      "target": "dist/fonts",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "node_modules/datatables.net-bs/css/*.*"
+      ],
+      "target": "dist/css",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "node_modules/datatables.net-responsive-bs/css/*.*"
+      ],
+      "target": "dist/css",
+      "flatten": [
+        0,
+        0
+      ]
+    },
+    {
+      "src": [
+        "node_modules/metismenu/dist/metisMenu.min.css"
+      ],
+      "target": "dist/css",
+      "flatten": [
+        0,
+        0
+      ]
+    }
+  ],
+  "styles": [
+    {
+      "src": "src/glob/*.scss",
+      "file": "glob.min.css",
+      "target": "dist/css"
+    },
+    {
+      "src": "src/app/**/*.scss",
+      "target": "dist/css"
+    }
+  ]
+}

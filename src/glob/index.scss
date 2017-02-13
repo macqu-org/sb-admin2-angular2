@@ -1,0 +1,23 @@
+@import "_variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/bootstrap-social/bootstrap-social.scss";
+@import "../../node_modules/datatables.net-bs/css/dataTables.bootstrap";
+@import "../../node_modules/datatables.net-responsive-bs/css/responsive.bootstrap";
+@import "../../node_modules/morris.js/morris";
+@import "sb-admin-2";
+
+// Load Screen
+.loadscreen {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.loadscreen > .card {
+  padding: 30px;
+}
+
+.loadscreen i,
+.loadscreen p {
+  margin-top: 20px;
+}
